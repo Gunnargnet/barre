@@ -1,0 +1,7 @@
+Font-family: Lato
+
+color-primary: #2fad94
+
+color-primary-dark: 265d0c;
+
+color-paragraph: #808080;

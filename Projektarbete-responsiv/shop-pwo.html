@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/index.css">
+
+        <title>GalneGunnar</title>
+    </head>
+
+    <body>
+        <nav class="navigation">
+            <a href="index.html">
+                <img src="img/logo.png" alt="GalneGunnar Logo" class="navigation__img">
+            </a>
+            <ul class="navigation__list">
+                <a href="shop.html">
+                    <li class="navigation__link">
+                        Store
+                    </li>
+                </a>
+                <a href="about.html">
+                    <li class="navigation__link">
+                        About
+                    </li>
+                </a>
+            </ul>
+            <div class="navigation__icon-container">
+            </div>
+
+        </nav>
+        <div class="hero-container">
+        </div>
+
+        <div class="content-container">
+            <div class="store-container">
+                <div class="store-category-container">
+                    <h3 class="header-tertiary header-tertiary--black-border">KATEGORIER</h3>
+                    <ul class="store-category__list">
+                        <a href="shop.html#store">
+                            <li class="store-category__links">Alla Produkter</li>
+                        </a>
+                        <a href="shop-protein.html#store">
+                            <li class="store-category__links">Protein</li>
+                        </a>
+                        <a href="shop-pwo.html#store">
+                            <li class="store-category__links store-category--green">Prestationshöjande</li>
+                        </a>
+                        <a href="shop-accessories.html#store">
+                            <li class="store-category__links">Tillbehör</li>
+                        </a>
+                        <a href="shop-packages.html#store">
+                            <li class="store-category__links">Paket</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="store-card-container" id="store">
+
+                    <div class="store-card-1">
+                        <a href="#store-popup-1"><img src="img/paketstort.jpg" alt="Supplement bottle"
+                                class="store-card__img store-card__img--small">
+                            <h3 class="header-tertiary">Galna Gunnar Special</h3>
+                            <p class="primary__paragraph primary__paragraph--small">Är du redo att bli helg galen? I det här paketet finner du
+                                essentiella produkter för..</p>
+                        </a>
+                        <div class="price-container">
+                            <p class="paragraph-price pragraph-price--border">697 SEK</p>
+                            <p class="paragraph-price parapgraph-price--red">599 SEK</p>
+                        </div>
+                        <a href="#"><button class="btn-shop">lägg i varukorg</button></a>
+                    </div>
+
+                    <div class="store-card-2">
+                        <a href="#store-popup-2"><img src="img/pwo.jpg" alt="Supplement bottle" class="store-card__img">
+                            <h3 class="header-tertiary">Pre-Workout</h3>
+                            <p class="primary__paragraph primary__paragraph--small">Med denna Pre-workout garanterar vi att du blir lika galen som
+                                Gunnar på gymmet..</p>
+                        </a>
+                        <div class="price-container">
+                            <p class="paragraph-price">349 SEK</p>
+                        </div>
+                        <a href="#"><button class="btn-shop">lägg i varukorg</button></a>
+                    </div>
+
+                    <div class="store-card-8">
+                        <a href="#store-popup-8"><img src="img/kreatin.jpg" alt="Supplement bottle"
+                                class="store-card__img">
+                            <h3 class="header-tertiary">Kreatin</h3>
+                            <p class="primary__paragraph primary__paragraph--small">Kreatin, populär väldokumenterad och effektiv!</p>
+                        </a>
+                        <div class="price-container">
+                            <p class="paragraph-price pragraph-price--border">99 SEK</p>
+                            <p class="paragraph-price parapgraph-price--red">79 SEK</p>
+                        </div>
+                        <a href="#"><button class="btn-shop">lägg i varukorg</button></a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="lightbox" id="store-popup-1">
+                <div class="store-popup-card-1">
+                    <div class="store-popup__img-container">
+                        <img src="img/paketstort.jpg" alt="Supplement bottle"
+                            class="store-popup__img store-popup__img--small">
+                    </div>
+
+                    <div class="store-popup__paragraph-container">
+                        <a class="close" href="#store">&times;</a>
+                        <h2 class="header-secondary">Galna Gunnar Special</h2>
+                        <p class="primary__paragraph">Är du redo att bli helg galen? I det här paketet finner du
+                            essentiella produkter för att bli lika galen som Gunnar!</p>
+
+                        <div class="store-popup__select-container">
+                            <select class="store-popup-taste store-popup-taste--small">
+                                <option class="primary__paragraph" label="BCAA"></option>
+                                <option class="primary__paragraph" label="Galna Gröna Äpplen"></option>
+                                <option class="primary__paragraph" label="Galna Kosjukan"></option>
+                                <option class="primary__paragraph" label="Galen Apelsin"></option>
+                                <option class="primary__paragraph" label="Tropikanska Galenskaper"></option>
+                            </select>
+
+                            <select class="store-popup-taste store-popup-taste--small">
+                                <option class="primary__paragraph" label="Pre-Workout"></option>
+                                <option class="primary__paragraph" label="Galna Gröna Äpplen"></option>
+                                <option class="primary__paragraph" label="Galna Kosjukan"></option>
+                                <option class="primary__paragraph" label="Galen Apelsin"></option>
+                                <option class="primary__paragraph" label="Tropikanska Galenskaper"></option>
+                            </select>
+                        </div>
+
+                        <div class="store-popup-buy-container">
+                            <div class="store__form-count">
+                                <form action="">
+                                    <input type="number" placeholder="1">
+                                </form>
+                                <a href="#"><button class="btn-shop">lägg i varukorg</button></a>
+                            </div>
+                            <p class="paragraph-price pragraph-price--border">697 SEK</p>
+                            <p class="paragraph-price parapgraph-price--red">599 SEK</p>
+                        </div>
+                        <div class="store-popup__more-container">
+                            <button class="btn-shop-more1">Beskrivning <svg class="store-chevron__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                                </svg></button>
+                            <div class="shop-show-more1">
+                                <p class="primary__paragraph">Galne Gunnars nya Kasein formula utlovar gainz utan
+                                    dess like, detta kombinerat med en helt tokig smak av galna äpplen!
+                                    Produkten räknas ej som livsmedel och är ej godkänd för tävlingar inom idrott. Spår
+                                    av
+                                    nötter, kräldjur, plast och "allmänna kemikalier" kan förekomma.
+                                </p>
+                            </div>
+
+                            <button class="btn-shop-more2">Detaljer<svg class="store-chevron__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                                </svg></button>
+                            <div class="shop-show-more2">
+                                <h3 class="header-tertiary">Produktinnehåll</h3>
+                                <p class="primary__paragraph">500g, ca 35 portioner</p>
+                                    <h3 class="header-tertiary">Användning</h3>
+                                    <p class="primary__paragraph">1 skopa (ca 15gram) blandas med 3-4 dl vatten</p>
+                                        <h3 class="header-tertiary">Innehåll (portion)</h3>
+                                        <p class="primary__paragraph">Kråkägg 3g, ramslök 4g, torkad kvarg 8g.</p>
+                                            <h3 class="header-tertiary">Varning</h3>
+                                            <p class="primary__paragraph">Bör ej brukas av människor, vanliga bieffekter
+                                                som mutationer, hjärtklapningar, magsjuka och dålig karaktär.
+                                            </p>
+                            </div>
+                            <h3 class="header-tertiary">Recensioner</h3>
+                            <div class="store-popup__star-container">
+                                <svg class="store-star__icon">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="store-star__icon">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="store-star__icon">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="store-star__icon">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="store-star__icon store-star__icon--grey">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                            </div>
+                            <div class="store-popup-review-container">
+                                <p class="primary__paragraph primary__paragraph--black">Erik</p>
+                                <div class="store-popup__star-container">
+                                    <svg class="store-star__icon">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="store-star__icon">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="store-star__icon">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="store-star__icon">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="store-star__icon">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                </div>
+                                <p class="primary__paragraph">Blir helt galen av smaken, tack Gunnar!</p>
+                            </div>
+
+                            <div class="store-popup-review-container">
+                                <p class="primary__paragraph primary__paragraph--black">Conny</p>
+                                <div class="store-popup__star-container">
+                                    <svg class="store-star__icon">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="store-star__icon">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="store-star__icon">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="store-star__icon store-star__icon--grey">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="store-star__icon store-star__icon--grey">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                </div>
+                                <p class="primary__paragraph">Blev redigt dålig i magen, men gott vare!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lightbox" id="store-popup-2">
+                <div class="store-popup-card-1">
+                    <div class="store-popup__img-container">
+                        <img src="img/pwo.jpg" alt="Supplement bottle" class="store-popup__img">
+                    </div>
+
+                    <div class="store-popup__paragraph-container">
+                        <a class="close" href="#store">&times;</a>
+                        <h2 class="header-secondary">Pre-Workout</h2>
+                        <p class="primary__paragraph">Med denna Pre-workout garanterar vi att du blir lika galen som
+                            Gunnar på gymmet.. Brukas på egen risk!</p>
+
+                        <div class="store-popup__select-container">
+                            <select class="store-popup-taste">
+                                <option class="primary__paragraph" label="Välj smak.."></option>
+                                <option class="primary__paragraph" label="Galna Gröna Äpplen"></option>
+                                <option class="primary__paragraph" label="Galna Kosjukan"></option>
+                                <option class="primary__paragraph" label="Galen Apelsin"></option>
+                                <option class="primary__paragraph" label="Tropikanska Galenskaper"></option>
+                            </select>
+                        </div>
+
+                        <div class="store-popup-buy-container">
+                            <div class="store__form-count">
+                                <form action="">
+                                    <input type="number" placeholder="1">
+                                </form>
+                                <a href="#"><button class="btn-shop">lägg i varukorg</button></a>
+                            </div>
+                            <p class="paragraph-price">349 SEK</p>
+                        </div>
+
+                        <div class="store-popup__more-container">
+                            <button class="btn-shop-more1">Beskrivning <svg class="store-chevron__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                                </svg></button>
+                            <div class="shop-show-more1">
+                                <p class="primary__paragraph">Galne Gunnars nya Kasein formula utlovar gainz utan
+                                    dess like, detta kombinerat med en helt tokig smak av galna äpplen!
+                                    Produkten räknas ej som livsmedel och är ej godkänd för tävlingar inom idrott. Spår
+                                    av
+                                    nötter, kräldjur, plast och "allmänna kemikalier" kan förekomma.
+                                </p>
+                            </div>
+
+                            <button class="btn-shop-more2">Detaljer<svg class="store-chevron__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                                </svg></button>
+                            <div class="shop-show-more2">
+                                <h3 class="header-tertiary">Produktinnehåll</h3>
+                                <p class="primary__paragraph">500g, ca 35 portioner</p>
+                                    <h3 class="header-tertiary">Användning</h3>
+                                    <p class="primary__paragraph">1 skopa (ca 15gram) blandas med 3-4 dl vatten</p>
+                                        <h3 class="header-tertiary">Innehåll (portion)</h3>
+                                        <p class="primary__paragraph">Kråkägg 3g, ramslök 4g, torkad kvarg 8g.</p>
+                                            <h3 class="header-tertiary">Varning</h3>
+                                            <p class="primary__paragraph">Bör ej brukas av människor, vanliga bieffekter
+                                                som mutationer, hjärtklapningar, magsjuka och dålig karaktär.
+                                            </p>
+                            </div>
+                            <h3 class="header-tertiary">Recensioner</h3>
+                            <div class="store-popup__star-container">
+                                <svg class="store-star__icon">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="store-star__icon">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="store-star__icon">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="store-star__icon">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="store-star__icon store-star__icon--grey">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                            </div>
+                            <div class="store-popup-review-container">
+                                <p class="primary__paragraph primary__paragraph--black">Erik</p>
+                                <div class="store-popup__star-container">
+                                    <svg class="store-star__icon">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="store-star__icon">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="store-star__icon">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="store-star__icon">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="store-star__icon">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                </div>
+                                <p class="primary__paragraph">Blir helt galen av smaken, tack Gunnar!</p>
+                            </div>
+
+                            <div class="store-popup-review-container">
+                                <p class="primary__paragraph primary__paragraph--black">Conny</p>
+                                <div class="store-popup__star-container">
+                                    <svg class="store-star__icon">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="store-star__icon">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="store-star__icon">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="store-star__icon store-star__icon--grey">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="store-star__icon store-star__icon--grey">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                </div>
+                                <p class="primary__paragraph">Blev redigt dålig i magen, men gott vare!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lightbox" id="store-popup-8">
+                <div class="store-popup-card-1">
+                    <div class="store-popup__img-container">
+                        <img src="img/kreatin.jpg" alt="Supplement bottle" class="store-popup__img">
+                    </div>
+
+                    <div class="store-popup__paragraph-container">
+                        <a class="close" href="#store">&times;</a>
+                        <h2 class="header-secondary">Kreatin</h2>
+                        <p class="primary__paragraph">Kreatin, populär väldokumenterad och effektiv!</p>
+
+                        <div class="store-popup-buy-container">
+                            <div class="store__form-count">
+                                <form action="">
+                                    <input type="number" placeholder="1">
+                                </form>
+                                <a href="#"><button class="btn-shop">lägg i varukorg</button></a>
+                            </div>
+                            <p class="paragraph-price pragraph-price--border">99 SEK</p>
+                            <p class="paragraph-price parapgraph-price--red">79 SEK</p>
+                        </div>
+
+                        <div class="store-popup__more-container">
+                            <button class="btn-shop-more1">Beskrivning <svg class="store-chevron__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                                </svg></button>
+                            <div class="shop-show-more1">
+                                <p class="primary__paragraph">Galne Gunnars nya Kasein formula utlovar gainz utan
+                                    dess like, detta kombinerat med en helt tokig smak av galna äpplen!
+                                    Produkten räknas ej som livsmedel och är ej godkänd för tävlingar inom idrott. Spår
+                                    av
+                                    nötter, kräldjur, plast och "allmänna kemikalier" kan förekomma.
+                                </p>
+                            </div>
+
+                            <button class="btn-shop-more2">Detaljer<svg class="store-chevron__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                                </svg></button>
+                            <div class="shop-show-more2">
+                                <h3 class="header-tertiary">Produktinnehåll</h3>
+                                <p class="primary__paragraph">500g, ca 35 portioner</p>
+                                    <h3 class="header-tertiary">Användning</h3>
+                                    <p class="primary__paragraph">1 skopa (ca 15gram) blandas med 3-4 dl vatten</p>
+                                        <h3 class="header-tertiary">Innehåll (portion)</h3>
+                                        <p class="primary__paragraph">Kråkägg 3g, ramslök 4g, torkad kvarg 8g.</p>
+                                            <h3 class="header-tertiary">Varning</h3>
+                                            <p class="primary__paragraph">Bör ej brukas av människor, vanliga bieffekter
+                                                som mutationer, hjärtklapningar, magsjuka och dålig karaktär.
+                                            </p>
+                            </div>
+                            <h3 class="header-tertiary">Recensioner</h3>
+                            <div class="store-popup__star-container">
+                                <svg class="store-star__icon">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="store-star__icon">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="store-star__icon">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="store-star__icon">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="store-star__icon store-star__icon--grey">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                            </div>
+                            <div class="store-popup-review-container">
+                                <p class="primary__paragraph primary__paragraph--black">Erik</p>
+                                <div class="store-popup__star-container">
+                                    <svg class="store-star__icon">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="store-star__icon">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="store-star__icon">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="store-star__icon">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="store-star__icon">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                </div>
+                                <p class="primary__paragraph">Blir helt galen av smaken, tack Gunnar!</p>
+                            </div>
+
+                            <div class="store-popup-review-container">
+                                <p class="primary__paragraph primary__paragraph--black">Conny</p>
+                                <div class="store-popup__star-container">
+                                    <svg class="store-star__icon">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="store-star__icon">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="store-star__icon">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="store-star__icon store-star__icon--grey">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="store-star__icon store-star__icon--grey">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                </div>
+                                <p class="primary__paragraph">Blev redigt dålig i magen, men gott vare!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+        <section class="section-newsletter">
+            <div class="row">
+                <div class="newsletter">
+                    <div class="newsletter__form">
+                        <form class="form">
+                            <h1 class="sign-up-title">Anmäl dig till</h1>
+                            <h1 class="sign-up-title">vårat nyhetsbrev</h1>
+                                <input type="text" class="sign-up-input" placeholder="Ange ditt namn" autofocus>
+                                <input type="password" class="sign-up-input" placeholder="Ange din epost">
+                                <input type="submit" value="Anmäl mig!" class="sign-up-button">
+                        </form>
+                        <div class="text-box-newsletter">
+                            <h1 class="heading-primary">
+                                <span class="heading-primary-main">Vill du veta mer</span>
+                                <span class="heading-primary-sub">Om våra produkter</span>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer-container">
+            <p class="primary__paragraph">Test</p>
+        </footer>
+
+    </body>
+    </html>
