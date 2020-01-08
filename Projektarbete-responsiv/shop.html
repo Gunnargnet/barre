@@ -8,6 +8,7 @@
 
         <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <title>GalneGunnar</title>
     </head>
@@ -15,7 +16,10 @@
     <body>
         <nav class="navigation">
             <a href ="index.html">
-                <img src="img/logo.png" alt="GalneGunnar Logo" class="navigation__img">
+                <div class="header-name-container">
+                    <h3 class="header-tertiary header-tertiarty--white--bold header-color-grey">Galne</h3>
+                    <h3 class="header-tertiary header-tertiarty--white--bold header-color-primary">Gunnar</h3>
+                </div>
             </a>
             <ul class="navigation__list">
                 <a href="shop.html"><li class="navigation__link">
@@ -44,9 +48,29 @@
                     </li>
                 </ul>
             </div>
-    
         </nav>
+
         <div class="hero-container">
+            <div class="hero__img-container">
+                <div class="content__hero-container">
+                    <div class="text-box-">
+                        <h1 class="heading-primary">
+                            <span class="heading-primary-main">Gå löss</span>
+                            <span class="heading-primary-sub">Bland våra produkter</span>
+                        </h1>
+                    </div>
+                </div>
+                <div class="hero__form-container">
+                    
+                    <form class="form">
+                        <h1 class="sign-up-title">Registrera & släpp loss</h1>
+                        <h1 class="sign-up-title">din inre Gunnar</h1>
+                            <input type="text" class="sign-up-input" placeholder="Ange ditt namn" autofocus>
+                            <input type="password" class="sign-up-input" placeholder="Ange din epost">
+                            <input type="submit" value="Anmäl mig!" class="sign-up-button">
+                    </form>
+                </div>
+            </div>
         </div>
 
         <div class="content-container">
@@ -1326,29 +1350,87 @@
                 </div>
             </div>
        
-            <div class="row">
-                <div class="newsletter">
-                    <div class="newsletter__form">
-                        <form class="form-content">
-                            <h1 class="sign-up-title">Anmäl dig till</h1>
-                            <h1 class="sign-up-title">vårat nyhetsbrev</h1>
-                                <input type="text" class="sign-up-input" placeholder="Ange ditt namn" autofocus>
-                                <input type="password" class="sign-up-input" placeholder="Ange din epost">
-                                <input type="submit" value="Anmäl mig!" class="sign-up-button">
-                        </form>
-                        <div class="text-box-newsletter">
-                            <h1 class="heading-primary">
-                                <span class="heading-primary-main">Vill du veta mer</span>
-                                <span class="heading-primary-sub">Om våra produkter</span>
-                            </h1>
-                        </div>
+            <div class="newsletter__img-container">
+                <div class="content__newsletter-container">
+                    <div class="text-box-newsletter">
+                        <h1 class="heading-primary-newsletter">
+                            <span class="heading-primary-main">Vill du veta</span>
+                            <span class="heading-primary-sub">mer om våra produkter</span>
+                        </h1>
+                    <form class="form-newsletter">
+                        <h1 class="sign-up-title">Anmäl dig till</h1>
+                        <h1 class="sign-up-title">vårat nyhetsbrev</h1>
+                            <input type="text" class="sign-up-input" placeholder="Ange ditt namn">
+                            <input type="password" class="sign-up-input" placeholder="Ange din epost">
+                            <input type="submit" value="Anmäl mig!" class="sign-up-button">
+                    </form>
                     </div>
                 </div>
             </div>
         </div>
-        
         <footer class="footer-container">
-            <p class="primary__paragraph">Test</p>
+            <div class="footer-logo-container">
+                <div class="footer-logo-name-container">
+                    <h3 class="header-tertiary header-tertiarty--white--bold">Galne</h3>
+                    <h3 class="header-tertiary header-tertiarty--white--bold header-color-primary">Gunnar</h3>
+                </div>
+                <div class="footer-list-container">
+                    <ul class="footer-logo__list">
+                        <a href="index.html"><li class="footer-logo__link">Hem</li></a>
+                        <li class="footer-logo__link">Villkor</li>
+                        <a href="about.html"><li class="footer-logo__link">Om oss</li></a>
+                        <li class="footer-logo__link">FAQ</li>
+                        <li class="footer-logo__link">Kontakt</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="footer-location-container">
+    
+                <div class="footer__icon-container">
+                    <svg class="footer__icon-contact">
+                        <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+                        <p class="primary__paragraph primary__paragraph--white--thin">28399 Dödskallegrottan 3</p>
+    
+                    </svg>
+                </div>
+    
+                <div class="footer__icon-container">
+                    <svg class="footer__icon-contact">
+                        <use xlink:href="img/sprite.svg#icon-phone"></use>
+                        <p class="primary__paragraph primary__paragraph--white--thin">023-32935</p>
+                    </svg>
+                </div>
+    
+                <div class="footer__icon-container">
+                    <svg class="footer__icon-contact">
+                        <use xlink:href="img/sprite.svg#icon-mail"></use>
+                        <p class="primary__paragraph primary__paragraph--white--thin">GalneGunnar@science.com</p>
+                    </svg>
+                </div>
+            </div>
+    
+            <div class="footer-socialmedia-container">
+                <p class="primary__paragraph primary__paragraph--white--bold">Om företaget</p>
+                <p class="primary__paragraph primary__paragraph--white--light-grey">Välkommen till Sveriges Galnaste butik
+                    för kosttillskott. Våra produkter är måhända ej vetenskapligt testade, men Gunnar vill dig väl och har
+                    empiriska bevis för att våra produkter kommer göra dig spritt språngande galen!</p>
+                <div class="footer-socialmedia-icons">
+                    <a href="https://validator.w3.org/" target="_blank"><svg class="footer__icon">
+                        <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                    </svg></a>
+                    <a href="https://validator.w3.org/" target="_blank"><svg class="footer__icon">
+                        <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                    </svg></a>
+                    <svg class="footer__icon">
+                        <use xlink:href="img/sprite.svg#icon-tumblr"></use>
+                    </svg>
+                    <svg class="footer__icon">
+                        <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                    </svg>
+    
+                </div>
+            </div>
         </footer>
     </body>
     </html>
