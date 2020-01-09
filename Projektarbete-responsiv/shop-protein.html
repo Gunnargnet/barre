@@ -15,57 +15,76 @@
 
     <body>
         <nav class="navigation">
-            <a href ="index.html">
-                <div class="header-name-container">
-                    <h3 class="header-tertiary header-tertiarty--white--bold header-color-grey">Galne</h3>
-                    <h3 class="header-tertiary header-tertiarty--white--bold header-color-primary">Gunnar</h3>
+            <div class="mobile-nav">
+                <input type="checkbox" checked>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-            </a>
-            <ul class="navigation__list">
-                <a href="shop.html"><li class="navigation__link">
-                    Handla
-                </li></a>
-                <a href="about.html"><li class="navigation__link">
-                    Om oss
-                </li></a>
-                <a href="#"><li class="navigation__link">
-                    Kontakt
-                </li></a>
-            </ul>
-            
-            <div class="navigation__icon-container">
-                <ul class="icon__list">
-                    <li class="icon__link">
-                        <a class="icon__nav"><i class="fa fa-search" aria-hidden="true"></i></a>
-                        <p class="icon__text">Sök</p>
-                    </li>
-                    <li class="icon__link">
-                        <a class="icon__nav"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
-                        <p class="icon__text">Kundvagn</p>
-                    </li>
-                    <li class="icon__link">
-                        <a href="#" target="_blank" class="btn-login">Logga in</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
+                <div class="nav-container">
+                    <ul class="navigation__list">
+                        <a href="index.html">
+                            <div class="header-name-container">
+                                <h3 class="header-tertiary header-tertiarty--white--bold header-color-grey">Galne</h3>
+                                <h3 class="header-tertiary header-tertiarty--white--bold header-color-primary">Gunnar</h3>
+                            </div>
+                        </a>
+                        <a href="shop.html">
+                            <li class="navigation__link">
+                                Handla
+                            </li>
+                        </a>
+                        <a href="about.html">
+                            <li class="navigation__link">
+                                Om oss
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="navigation__link">
+                                Kontakt
+                            </li>
+                        </a>
+                    </ul>
+                    <ul class="icon__list">
+                        <li class="icon__link">
+                            <a class="icon__nav"><i class="fa fa-search" aria-hidden="true"></i></a>
+                            <p class="icon__text">Sök</p>
+                        </li>
+                        <li class="icon__link">
+                            <a class="icon__nav"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+                            <p class="icon__text">Kundvagn</p>
+                        </li>
+                        <li class="icon__link">
+                            <a href="#" target="_blank" class="btn-login">Logga in</a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+                
+            </nav>
         <div class="hero-container">
-            <div class="text-box">
-                <h1 class="heading-primary">
-                    <span class="heading-primary-main">Ta steget</span>
-                    <span class="heading-primary-sub">Till Gunnar</span>
-                </h1>
+            <div class="hero__img-container">
+                <div class="content__hero-container">
+                    <div class="text-box-">
+                        <h1 class="heading-primary">
+                            <span class="heading-primary-main">Gå löss</span>
+                            <span class="heading-primary-sub">Bland våra produkter</span>
+                        </h1>
+                    </div>
+                </div>
+                <div class="hero__form-container">
+                    
+                    <form class="form">
+                        <h1 class="sign-up-title">Registrera & släpp loss</h1>
+                        <h1 class="sign-up-title">din inre Gunnar</h1>
+                            <input type="text" class="sign-up-input" placeholder="Ange ditt namn" autofocus>
+                            <input type="password" class="sign-up-input" placeholder="Ange din epost">
+                            <input type="submit" value="Anmäl mig!" class="sign-up-button">
+                    </form>
+                </div>
             </div>
-            <form class="sign-up">
-                <h1 class="sign-up-title">Registrera & släpp loss</h1>
-                <h1 class="sign-up-title">din inre Gunnar</h1>
-                    <input type="text" class="sign-up-input" placeholder="Välj ditt användarnamn">
-                    <input type="password" class="sign-up-input" placeholder="Välj ditt lösenord">
-                    <input type="submit" value="Registrera!" class="sign-up-button">
-            </form>
         </div>
-
         <div class="content-container">
             <div class="store-container">
                 <div class="store-category-container">
@@ -93,13 +112,13 @@
                     <div class="store-card-3">
                         <a href="#store-popup-3"><img src="img/EAA.jpg" alt="Supplement bottle" class="store-card__img">
                             <h3 class="header-tertiary">EAA</h3>
-                            <p class="primary__paragraph primary__paragraph--small">Essentiella Aminosyror direkt ur Gunnars laboratorium..</p>
+                            <p class="primary__paragraph">Essentiella Aminosyror direkt ur Gunnars laboratorium..</p>
                         </a>
                         <div class="price-container">
                             <p class="paragraph-price pragraph-price--border">299 SEK</p>
                             <p class="paragraph-price parapgraph-price--red">249 SEK</p>
                         </div>
-                        <a href="#"><button class="btn-shop">lägg i varukorg</button></a>
+                        <a href="#store-popup-cart-3"><button class="btn-shop">lägg i varukorg</button></a>
                     </div>
 
                     <div class="store-card-4">
@@ -112,7 +131,7 @@
                         <div class="price-container">
                             <p class="paragraph-price">249 SEK</p>
                         </div>
-                        <a href="#"><button class="btn-shop">lägg i varukorg</button></a>
+                        <a href="#store-popup-cart-4"><button class="btn-shop">lägg i varukorg</button></a>
                     </div>
 
                     <div class="store-card-5">
@@ -126,7 +145,7 @@
                             <p class="paragraph-price pragraph-price--border">188 SEK</p>
                             <p class="paragraph-price parapgraph-price--red">149 SEK</p>
                         </div>
-                        <a href="#"><button class="btn-shop">lägg i varukorg</button></a>
+                        <a href="#store-popup-cart-5"><button class="btn-shop">lägg i varukorg</button></a>
                     </div>
 
                     <div class="store-card-6">
@@ -138,7 +157,7 @@
                         <div class="price-container">
                             <p class="paragraph-price">149 SEK</p>
                         </div>
-                        <a href="#"><button class="btn-shop">lägg i varukorg</button></a>
+                        <a href="#store-popup-cart-6"><button class="btn-shop">lägg i varukorg</button></a>
                     </div>
 
                     <div class="store-card-7">
@@ -150,8 +169,68 @@
                         <div class="price-container">
                             <p class="paragraph-price">129 SEK</p>
                         </div>
-                        <a href="#"><button class="btn-shop">lägg i varukorg</button></a>
+                        <a href="#store-popup-cart-7"><button class="btn-shop">lägg i varukorg</button></a>
                     </div>
+                </div>
+            </div>
+
+            <div class="lightbox" id="store-popup-cart-3">
+                <div class="store-popup-cart-container-1">
+                    <img src="/img/EAA.jpg" alt="Galne Gunnars EAA" class="store-popup__img">
+                    <a class="close" href="#store">&times;</a>
+                    <div class="cart__paragraph-container">
+                    <h3 class="header-tertiary header-color-grey">Du har lagt till Galne Gunnars EAA till din varukorg!
+                    </h3>
+                    <a href="#store"><button class="btn-shop">till butik</button></a>
+                </div>
+                </div>
+            </div>
+
+            <div class="lightbox" id="store-popup-cart-4">
+                <div class="store-popup-cart-container-1">
+                    <img src="/img/BCAA.jpg" alt="Galne Gunnars BCAA" class="store-popup__img">
+                    <a class="close" href="#store">&times;</a>
+                    <div class="cart__paragraph-container">
+                    <h3 class="header-tertiary header-color-grey">Du har lagt till Galne Gunnars BCAA till din varukorg!
+                    </h3>
+                    <a href="#store"><button class="btn-shop">till butik</button></a>
+                </div>
+                </div>
+            </div>
+
+            <div class="lightbox" id="store-popup-cart-5">
+                <div class="store-popup-cart-container-1">
+                    <img src="/img/paketlitet.jpg" alt="Gunnar Special" class="store-popup__img">
+                    <a class="close" href="#store">&times;</a>
+                    <div class="cart__paragraph-container">
+                    <h3 class="header-tertiary header-color-grey">Du har lagt till Gunnars Special till din varukorg!
+                    </h3>
+                    <a href="#store"><button class="btn-shop">till butik</button></a>
+                </div>
+                </div>
+            </div>
+
+            <div class="lightbox" id="store-popup-cart-6">
+                <div class="store-popup-cart-container-1">
+                    <img src="/img/kasein.jpg" alt="Galne Gunnars Kasein" class="store-popup__img">
+                    <a class="close" href="#store">&times;</a>
+                    <div class="cart__paragraph-container">
+                    <h3 class="header-tertiary header-color-grey">Du har lagt till Galne Gunnars Kasein till din varukorg!
+                    </h3>
+                    <a href="#store"><button class="btn-shop">till butik</button></a>
+                </div>
+                </div>
+            </div>
+
+            <div class="lightbox" id="store-popup-cart-7">
+                <div class="store-popup-cart-container-1">
+                    <img src="/img/vassle.jpg" alt="Galne Gunnars Vassle" class="store-popup__img">
+                    <a class="close" href="#store">&times;</a>
+                    <div class="cart__paragraph-container">
+                    <h3 class="header-tertiary header-color-grey">Du har lagt till Galne Gunnars Vassle till din varukorg!
+                    </h3>
+                    <a href="#store"><button class="btn-shop">till butik</button></a>
+                </div>
                 </div>
             </div>
 
@@ -182,7 +261,7 @@
                                 <form action="">
                                     <input type="number" placeholder="1">
                                 </form>
-                                <a href="#"><button class="btn-shop">lägg i varukorg</button></a>
+                                <a href="#store-popup-cart-3"><button class="btn-shop">lägg i varukorg</button></a>
                             </div>
                             <p class="paragraph-price pragraph-price--border">299 SEK</p>
                             <p class="paragraph-price parapgraph-price--red">249 SEK</p>
@@ -309,7 +388,7 @@
                                 <form action="">
                                     <input type="number" placeholder="1">
                                 </form>
-                                <a href="#"><button class="btn-shop">lägg i varukorg</button></a>
+                                <a href="#store-popup-cart-4"><button class="btn-shop">lägg i varukorg</button></a>
                             </div>
                             <p class="paragraph-price">249 SEK</p>
                         </div>
@@ -412,7 +491,7 @@
                 <div class="store-popup-card-1">
                     <div class="store-popup__img-container">
                         <img src="img/paketlitet.jpg" alt="Supplement bottle"
-                            class="store-popup__img store-popup__img--small">
+                            class="store-popup__img">
                     </div>
 
                     <div class="store-popup__paragraph-container">
@@ -436,7 +515,7 @@
                                 <form action="">
                                     <input type="number" placeholder="1">
                                 </form>
-                                <a href="#"><button class="btn-shop">lägg i varukorg</button></a>
+                                <a href="#store-popup-cart-5"><button class="btn-shop">lägg i varukorg</button></a>
                             </div>
                             <p class="paragraph-price pragraph-price--border">188 SEK</p>
                             <p class="paragraph-price parapgraph-price--red">149 SEK</p>
@@ -562,7 +641,7 @@
                                 <form action="">
                                     <input type="number" placeholder="1">
                                 </form>
-                                <a href="#"><button class="btn-shop">lägg i varukorg</button></a>
+                                <a href="#store-popup-cart-6"><button class="btn-shop">lägg i varukorg</button></a>
                             </div>
                             <p class="paragraph-price">149 SEK</p>
                         </div>
@@ -687,7 +766,7 @@
                                 <form action="">
                                     <input type="number" placeholder="1">
                                 </form>
-                                <a href="#"><button class="btn-shop">lägg i varukorg</button></a>
+                                <a href="#store-popup-cart-7"><button class="btn-shop">lägg i varukorg</button></a>
                             </div>
                             <p class="paragraph-price">129 SEK</p>
                         </div>

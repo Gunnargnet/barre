@@ -14,49 +14,55 @@
 </head>
 
 <body>
-
     <nav class="navigation">
-        <a href="index.html">
-            <div class="header-name-container">
-                <h3 class="header-tertiary header-tertiarty--white--bold header-color-grey">Galne</h3>
-                <h3 class="header-tertiary header-tertiarty--white--bold header-color-primary">Gunnar</h3>
+        <div class="mobile-nav">
+            <input type="checkbox" checked>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-        </a>
-        <ul class="navigation__list">
-            <a href="shop.html">
-                <li class="navigation__link">
-                    Handla
-                </li>
-            </a>
-            <a href="about.html">
-                <li class="navigation__link">
-                    Om oss
-                </li>
-            </a>
-            <a href="#">
-                <li class="navigation__link">
-                    Kontakt
-                </li>
-            </a>
-        </ul>
-
-        <div class="navigation__icon-container">
-            <ul class="icon__list">
-                <li class="icon__link">
-                    <a class="icon__nav"><i class="fa fa-search" aria-hidden="true"></i></a>
-                    <p class="icon__text">Sök</p>
-                </li>
-                <li class="icon__link">
-                    <a class="icon__nav"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
-                    <p class="icon__text">Kundvagn</p>
-                </li>
-                <li class="icon__link">
-                    <a href="#" target="_blank" class="btn-login">Logga in</a>
-                </li>
-            </ul>
-        </div>
-
-    </nav>
+            <div class="nav-container">
+                <ul class="navigation__list">
+                    <a href="index.html">
+                        <div class="header-name-container">
+                            <h3 class="header-tertiary header-tertiarty--white--bold header-color-grey">Galne</h3>
+                            <h3 class="header-tertiary header-tertiarty--white--bold header-color-primary">Gunnar</h3>
+                        </div>
+                    </a>
+                    <a href="shop.html">
+                        <li class="navigation__link">
+                            Handla
+                        </li>
+                    </a>
+                    <a href="about.html">
+                        <li class="navigation__link">
+                            Om oss
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="navigation__link">
+                            Kontakt
+                        </li>
+                    </a>
+                </ul>
+                <ul class="icon__list">
+                    <li class="icon__link">
+                        <a class="icon__nav"><i class="fa fa-search" aria-hidden="true"></i></a>
+                        <p class="icon__text">Sök</p>
+                    </li>
+                    <li class="icon__link">
+                        <a class="icon__nav"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+                        <p class="icon__text">Kundvagn</p>
+                    </li>
+                    <li class="icon__link">
+                        <a href="#" target="_blank" class="btn-login">Logga in</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            
+        </nav>
     <div class="hero-container">
         <div class="hero__img-container">
             <div class="content__hero-container">
@@ -80,26 +86,46 @@
         </div>
     </div>
     <div class="content-container">
-        <div class="gallery-container">
-            <button class="gallery-container__btn1"></button>
-            <button class="gallery-container__btn2"></button>
-            <button class="gallery-container__btn3"></button>
 
+        <div class="gallery-container2">
+            <s id="s1"></s>
+            <s id="s2"></s>
+            <s id="s3"></s>
+            
+                <div class="slider-container-stor">
+                    <div class="slider__img-container">
+                        <img src="/img/slide1.jpg" alt="">
+                    </div>
+                    <div class="slider__img-container">
+                        <img src="/img/slide2.jpg" alt="">
+                    </div>
+                    <div class="slider__img-container">
+                        <img src="/img/slide3.jpg" alt="">
 
-            <div class="gallery-container__img1">
-                <img src="/img/skilletpicture1.jpg" alt="" class="gallery__img1">
+                    </div>
+                </div>
+            
+            <div class="prevNext">
+
+                <div class="btn1"><a href="#s3"><svg class="chevron__icon--large icon-left">
+                    <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                </svg></a><a href="#s2"><svg class="chevron__icon--large">
+                    <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                </svg></a></div>
+                
+                <div class="btn2"><a href="#s1"><svg class="chevron__icon--large icon-left">
+                    <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                </svg></a><a href="#s3"><svg class="chevron__icon--large">
+                    <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                </svg></a></div>
+               
+                <div class="btn3"><a href="#s2"><svg class="chevron__icon--large icon-left">
+                    <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                </svg></a><a href="#s1"><svg class="chevron__icon--large">
+                    <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                </svg></a></div>
             </div>
-            <div class="gallery-container__img2">
-                <img src="/img/skilletpicture2.jpg" alt="" class="gallery__img2">
-            </div>
-            <div class="gallery-container__img3">
-                <img src="/img/skilletpicture3.jpg" alt="" class="gallery__img3">
-            </div>
-
-
-
-
-
+            
         </div>
 
         <div class="illustration-container">
@@ -144,11 +170,9 @@
             </div>
             <div class="content__paragraph-container">
                 <h2 class="header-primary">Rädda miljön</h2>
-                <p class="primary__paragraph">Vi använder växtbaserat protein, vilket gör att GalneGunnar kräver mindre
-                    vatten och producerar mindre koldioxid. Vårt pulver minskar avfallsförbrukningen med 20%.</p>
+                <p class="primary__paragraph">Vi använder växtbaserat protein, vilket gör att GalneGunnar kräver mindre vatten och producerar mindre koldioxid. Vårt pulver minskar avfallsförbrukningen med 20%.</p>
                 <p class="primary__paragraph">
-                    Tack vare våra noggrant utvalda ingredienser kan vi också sänka tillverkningskostnaderna och undvika
-                    att produkter kastas på grund av lång hållbarhet tills de öppnas, till skillnad från andra märken
+                    Tack vare våra noggrant utvalda ingredienser kan vi också sänka tillverkningskostnaderna och undvika spill kastas på grund av lång hållbarhet tills de öppnas, till skillnad från andra märken
                     som kastas efter några månader.</p>
                 <a href="#" target="_blank" class="btn-login">Läs mer...</a>
             </div>
