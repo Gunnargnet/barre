@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
     <head>
         <meta charset="UTF-8">
@@ -30,21 +30,17 @@
                                 <h3 class="header-tertiary header-tertiarty--white--bold header-color-primary">Gunnar</h3>
                             </div>
                         </a>
-                        <a href="shop.html">
-                            <li class="navigation__link">
-                                Handla
-                            </li>
-                        </a>
-                        <a href="about.html">
-                            <li class="navigation__link">
-                                Om oss
-                            </li>
-                        </a>
-                        <a href="#footer">
-                            <li class="navigation__link">
-                                Kontakt
-                            </li>
-                        </a>
+                        <li class="navigation__link">
+                            <a class="navigation__link" href="shop.html">Handla
+                            </a></li>
+                                      
+                        <li class="navigation__link">
+                            <a class="navigation__link" href="about.html">Om oss
+                            </a></li>
+                                        
+                        <li class="navigation__link">
+                            <a class="navigation__link" href="#footer">Kontakt
+                            </a></li>
                         <div class="navigation-hidden-container">
                             <ul class="navigation__link-hidden">
                         <a href="shop.html#shop">
@@ -72,7 +68,7 @@
                         </li>
                         <li class="icon__link">
                             <a class="icon__nav"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
-                            <p class="icon__text">Kundvagn</p>
+                            <a href="#cart" class="icon__text--large"><p class="icon__text">Kundvagn</p></a>
                         </li>
                         <li class="icon__link">
                             <a href="#" target="_blank" class="btn-login">Logga in</a>
@@ -104,7 +100,7 @@
                 </div>
             </div>
         </div>
-        <div class="content-container">
+        <div class="content-container" id="store">
             <div class="store-container">
                 <div class="store-category-container">
                     <ul class="store-category__list">
@@ -126,7 +122,7 @@
                     </ul>
                 </div>
 
-                <div class="store-card-container" id="store">
+                <div class="store-card-container">
                     <div class="store-card-3">
                         <a href="#store-popup-3"><img src="img/EAA.jpg" alt="Supplement bottle" class="store-card__img">
                             <h3 class="header-tertiary">EAA</h3>
@@ -194,7 +190,7 @@
 
             <div class="lightbox" id="store-popup-cart-3">
                 <div class="store-popup-cart-container-1">
-                    <img src="/img/EAA.jpg" alt="Galne Gunnars EAA" class="store-popup__img">
+                    <img src="img/EAA.jpg" alt="Galne Gunnars EAA" class="store-popup__img">
                     <a class="close" href="#store">&times;</a>
                     <div class="cart__paragraph-container">
                     <h3 class="header-tertiary header-color-grey">Du har lagt till Galne Gunnars EAA till din varukorg!
@@ -206,7 +202,7 @@
 
             <div class="lightbox" id="store-popup-cart-4">
                 <div class="store-popup-cart-container-1">
-                    <img src="/img/BCAA.jpg" alt="Galne Gunnars BCAA" class="store-popup__img">
+                    <img src="img/BCAA.jpg" alt="Galne Gunnars BCAA" class="store-popup__img">
                     <a class="close" href="#store">&times;</a>
                     <div class="cart__paragraph-container">
                     <h3 class="header-tertiary header-color-grey">Du har lagt till Galne Gunnars BCAA till din varukorg!
@@ -218,7 +214,7 @@
 
             <div class="lightbox" id="store-popup-cart-5">
                 <div class="store-popup-cart-container-1">
-                    <img src="/img/paketlitet.jpg" alt="Gunnar Special" class="store-popup__img">
+                    <img src="img/paketlitet.jpg" alt="Gunnar Special" class="store-popup__img">
                     <a class="close" href="#store">&times;</a>
                     <div class="cart__paragraph-container">
                     <h3 class="header-tertiary header-color-grey">Du har lagt till Gunnars Special till din varukorg!
@@ -230,7 +226,7 @@
 
             <div class="lightbox" id="store-popup-cart-6">
                 <div class="store-popup-cart-container-1">
-                    <img src="/img/kasein.jpg" alt="Galne Gunnars Kasein" class="store-popup__img">
+                    <img src="img/kasein.jpg" alt="Galne Gunnars Kasein" class="store-popup__img">
                     <a class="close" href="#store">&times;</a>
                     <div class="cart__paragraph-container">
                     <h3 class="header-tertiary header-color-grey">Du har lagt till Galne Gunnars Kasein till din varukorg!
@@ -242,7 +238,7 @@
 
             <div class="lightbox" id="store-popup-cart-7">
                 <div class="store-popup-cart-container-1">
-                    <img src="/img/vassle.jpg" alt="Galne Gunnars Vassle" class="store-popup__img">
+                    <img src="img/vassle.jpg" alt="Galne Gunnars Vassle" class="store-popup__img">
                     <a class="close" href="#store">&times;</a>
                     <div class="cart__paragraph-container">
                     <h3 class="header-tertiary header-color-grey">Du har lagt till Galne Gunnars Vassle till din varukorg!
@@ -886,9 +882,9 @@
             </div>
             <div class="footer-list-container">
                 <ul class="footer-logo__list">
-                    <a href="index.html"><li class="footer-logo__link">Hem</li></a>
+                    <li class="footer-logo__link"><a class="footer-logo__link" href="index.html">Hem</a></li>
                     <li class="footer-logo__link">Villkor</li>
-                    <a href="about.html"><li class="footer-logo__link">Om oss</li></a>
+                    <li class="footer-logo__link"><a class="footer-logo__link" href="about.html">Om oss</a></li>
                     <li class="footer-logo__link">FAQ</li>
                     <li class="footer-logo__link">Kontakt</li>
                 </ul>
@@ -899,24 +895,20 @@
 
             <div class="footer__icon-container">
                 <svg class="footer__icon-contact">
-                    <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+                    <use xlink:href="img/sprite.svg#icon-location-pin"></use></svg>
                     <p class="primary__paragraph primary__paragraph--white--thin">28399 Dödskallegrottan 3</p>
-
-                </svg>
             </div>
 
             <div class="footer__icon-container">
                 <svg class="footer__icon-contact">
-                    <use xlink:href="img/sprite.svg#icon-phone"></use>
-                    <p class="primary__paragraph primary__paragraph--white--thin">023-32935</p>
-                </svg>
+                    <use xlink:href="img/sprite.svg#icon-phone"></use></svg>
+                    <p class="primary__paragraph primary__paragraph--white--thin">023-32935</p>    
             </div>
 
             <div class="footer__icon-container">
                 <svg class="footer__icon-contact">
-                    <use xlink:href="img/sprite.svg#icon-mail"></use>
-                    <p class="primary__paragraph primary__paragraph--white--thin">GalneGunnar@science.com</p>
-                </svg>
+                    <use xlink:href="img/sprite.svg#icon-mail"></use></svg>
+                    <p class="primary__paragraph primary__paragraph--white--thin">GalneGunnar@science.com</p>                       
             </div>
         </div>
 
@@ -926,10 +918,10 @@
                 för kosttillskott. Våra produkter är måhända ej vetenskapligt testade, men Gunnar vill dig väl och har
                 empiriska bevis för att våra produkter kommer göra dig spritt språngande galen!</p>
             <div class="footer-socialmedia-icons">
-                <a href="https://validator.w3.org/" target="_blank"><svg class="footer__icon">
+                <a href="https://validator.w3.org/nu/?doc=https://users.du.se/~h19gusod/Projektarbete-responsiv/" target="_blank"><svg class="footer__icon">
                     <use xlink:href="img/sprite.svg#icon-facebook"></use>
                 </svg></a>
-                <a href="https://validator.w3.org/" target="_blank"><svg class="footer__icon">
+                <a href="https://jigsaw.w3.org/css-validator/validator?uri=users.du.se/~h19gusod/Projektarbete-responsiv/" target="_blank"><svg class="footer__icon">
                     <use xlink:href="img/sprite.svg#icon-instagram"></use>
                 </svg></a>
                 <svg class="footer__icon">
@@ -942,5 +934,69 @@
             </div>
         </div>
     </footer>
+    <div class="lightbox" id="cart">
+        <div class="cart-container">
+            <div class="cart-wrapper">
+            <div class="cart-close-container">
+            <a class="close" href="#">&times;</a>
+        </div>
+            
+                <div class="cart-product-specifics-container">
+                    <h3 class="header-tertiary">Produkt</h3>
+                    <h3 class="header-tertiary">Pris</h3>
+                    <h3 class="header-tertiary">Antal</h3>
+                    <h3 class="header-tertiary">Total</h3>
+                </div>
+
+                <div class="cart-product-row">
+                    <div class="cart-product-title">
+                    <p class="primary__paragraph paragraph--margin-zero">EAA</p> 
+                </div>                  
+                    <img src="img/EAA.jpg" alt="Galne Gunnar EAA" class="cart-product__img">
+                    <div class="price-container price-container--column">
+                        <p class="paragraph-price pragraph-price--border paragraph--margin-zero">299 SEK</p>
+                        <p class="paragraph-price parapgraph-price--red paragraph--margin-zero">249 SEK</p>
+                    </div>
+                    <div class="paragraph-price paragraph--margin-zero">2</div>
+                    <p class="paragraph-price paragraph--margin-zero">498 SEK</p>
+                </div>
+
+                <div class="cart-product-row">    
+                    <div class="cart-product-title">
+                        <p class="primary__paragraph paragraph--margin-zero">G.G Special</p> 
+                    </div>                
+                    <img src="img/paketstort.jpg" alt="Galne Gunnar Special" class="cart-product__img">
+                    <div class="price-container price-container--column">
+                        <p class="paragraph-price pragraph-price--border paragraph--margin-zero">697 SEK</p>
+                        <p class="paragraph-price parapgraph-price--red paragraph--margin-zero">599 SEK</p>
+                    </div>
+                    <div class="paragraph-price paragraph--margin-zero">1</div>
+                    <p class="paragraph-price paragraph--margin-zero">599 SEK</p>
+                </div>
+
+                <div class="cart-product-row cart-product-row--margin">
+                    <h3 class="header-tertiary">Summa</h3>
+                    <p class="paragraph-price paragraph--margin-zero">1097 SEK</p>
+                </div>
+
+                <div class="cart-product-row">
+                    <h3 class="header-tertiary">Frakt</h3>
+                    <p class="paragraph-price paragraph--margin-zero">49 SEK</p>
+                </div>
+
+                <div class="cart-product-row">
+                    <h3 class="header-tertiary">Totalt</h3>
+                    <p class="paragraph-price paragraph--margin-zero">1146 SEK</p>
+                </div>
+
+                <div class="btn__paragraph-cart-container">
+                <button class="btn-shop paragraph--margin-zero">Slutför köp!</button>
+                <p class="primary__paragraph--small primary__paragraph--small--margin">Genom att klicka på "Slutför köp" godkänner jag Galne Gunnars Galna Användarvillkor och bekräftar att jag har läst Galne Gunnars Galna dataskyddspolicy.</p>
+            </div>
+            </div>
+            
+        </div>
+    </div>
+
     </body>
     </html>
